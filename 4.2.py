@@ -1,10 +1,10 @@
 def func(num):
-    if num == 0:
-        return "ZeroDivisionError"
-    elif type(num) != int:
+    if not num.isdigit():
         return "ValueError"
+    elif int(num) == 0:
+        return "ZeroDivisionError"
     else:
-        return num / 100
+        return 100 / int(num)
 
 
 print(func(input()))

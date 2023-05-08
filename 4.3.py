@@ -2,7 +2,6 @@ def func(date):
     flag = False
     num1 = 0
     num2 = 0
-    num3 = 0
     word = ""
     for sym in date:
         if sym == '.':
